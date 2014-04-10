@@ -9,8 +9,12 @@
 <meta name="viewport" content="width=device-width;initial-scale=1.0" />
 <script src="<c:url value="/resources/js/jquery-1.10.2.js"/>"></script>
 <script src="<c:url value="/resources/js/bootstrap.js"/>"></script>
+<script src="<c:url value="/resources/3DGallery/js/jquery.gallery.js" />"></script>
+<script src="<c:url value="/resources/3DGallery/js/modernizr.custom.53451.js" />"></script>
 <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/bootstrap.css"/>" />
 <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/index.css"/>" />
+<link rel="stylesheet" type="text/css" href="<c:url value="/resources/3DGallery/css/demo.css" />" />
+<link rel="stylesheet" type="text/css" href="<c:url value="/resources/3DGallery/css/style.css" />" />
 <title>欢迎来到我的小窝</title>
 </head>
 <body>
@@ -37,6 +41,30 @@
 		</ul>
 	</nav>
 	
-	
+	<section id="dg-container" class="dg-container">
+				<div class="dg-wrapper">
+					<a href="#"><img src="<c:url value="/resources/3DGallery/images/1.jpg" />" alt="image01">
+						<div>http://www.colazionedamichy.it/</div>
+					</a>
+					<a href="#"><img src="<c:url value="/resources/3DGallery/images/2.jpg" />" alt="image02">
+						<div>http://www.percivalclo.com/</div>
+					</a>
+					<a href="#"><img src="<c:url value="/resources/3DGallery/images/3.jpg" />" alt="image03">
+						<div>http://www.wanda.net/fr</div>
+					</a>
+					<a href="#"><img src="<c:url value="/resources/3DGallery/images/4.jpg" />" alt="image04">
+						<div>http://lifeingreenville.com/</div>
+					</a>
+				</div>
+				<nav>	
+					<span class="dg-prev">&lt;</span>
+					<span class="dg-next">&gt;</span>
+				</nav>
+	 </section>
 </body>
+<script type="text/javascript">
+	$(function() {
+		$('#dg-container').gallery();
+	});
+</script>
 </html>

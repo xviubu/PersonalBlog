@@ -61,6 +61,11 @@
 					<span class="dg-next">&gt;</span>
 				</nav>
 	 </section>
+	 
+	 <nav class="navbar navbar-default navbar-fixed-bottom nav" role="navigation">
+	 	
+	 </nav>
+	 
 </body>
 <script type="text/javascript">
 	$(function() {

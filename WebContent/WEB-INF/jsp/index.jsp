@@ -27,8 +27,8 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">我的主页</a>
-			<a class="navbar-brand" href="#">文才武略</a>
+			<a class="navbar-brand" href="#"><img class="home" src="<c:url value="/resources/images/home.png" />" ></a>
+			<a class="navbar-brand" href="article">文才武略</a>
 			<a class="navbar-brand" href="#">随手小记</a>
 		</div>
 

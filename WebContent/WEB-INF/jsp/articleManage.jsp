@@ -6,14 +6,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="<c:url value="/resources/js/jquery-1.10.2.js"/>"></script>
+<script src="<c:url value="/resources/js/stickUp.min.js"/>"></script>
+<script src="<c:url value="/resources/js/stickyMojo.js"/>"></script>
+<script src="<c:url value="/resources/js/jquery.jpanelmenu.js"/>"></script>
 <script src="<c:url value="/resources/js/bootstrap.js"/>"></script>
 <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/bootstrap.css"/>" />
 <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/article.css"/>" />
 <title></title>
 </head>
 <body>
-	<nav class="navbar navbar-default nav navbar-static-top" role="navigation">
+	<nav class="navbar navbar-default  mynav navbar-fixed-top" role="navigation">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse"
 				data-target="#bs-example-navbar-collapse-1">
@@ -35,16 +39,28 @@
 			<li><a href="#"></a></li>
 		</ul>
 	</nav>
-	<div class="weather">
-		<iframe src="http://m.weather.com.cn/m/pn12/weather.htm " width="245" height="110"  
-			 marginwidth="0" marginheight="0"  frameborder="0"  scrolling="no">
-		</iframe>  
-	</div>
-
-	 <nav class="navbar navbar-default navbar-fixed-bottom nav" role="navigation">
+	<div id="wrapper">
+ 		 <div id="sidebar">
+   			 <p>sidebar</p>
+  		</div>
+ 
+  <div id="main">
+    <p>main</p>
+  </div>
+ 
+  <div id="footer">
+    Footer
+  </div>
+ 
+</div>
+	
+	 <nav class="navbar navbar-default navbar-fixed-bottom mynav" role="navigation">
 
 	 </nav>
 </body>
 <script type="text/javascript">
+	$(document).ready(function(){
+   	 	$('#sidebar').stickyMojo({footerID: '#footer', contentID: '#main'});
+  	});
 </script>
 </html>

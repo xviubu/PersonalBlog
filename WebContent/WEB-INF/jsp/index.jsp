@@ -18,7 +18,7 @@
 <title>欢迎来到我的小窝</title>
 </head>
 <body>
-	<nav class="navbar navbar-default nav navbar-static-top" role="navigation">
+	<nav class="mynav navbar navbar-default navbar-static-top" role="navigation">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse"
 				data-target="#bs-example-navbar-collapse-1">
@@ -62,7 +62,7 @@
 				</nav>
 	 </section>
 	 
-	 <nav class="navbar navbar-default navbar-fixed-bottom nav" role="navigation">
+	 <nav class="mynav navbar navbar-default navbar-fixed-bottom" role="navigation">
 	 	
 	 </nav>
 	 
